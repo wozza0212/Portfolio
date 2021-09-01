@@ -1,10 +1,25 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}Thomas's Portfolio{% endblock %}</title>
+        <link href="{% static 'css/portfolio.css' %}" rel="stylesheet">
 </head>
 <body>
+
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="about_me.html">About me</a>
+        <a href="contact_me.html">Contact me</a>
+        <a href="{% url 'blog:post_list' %}">Blog</a>
+
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
 
 </body>
 </html>
