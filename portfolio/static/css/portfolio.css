@@ -1,3 +1,15 @@
 h1{
-  color: blue;
+  color: red;
+}
+
+body{
+    background-color: #D3D3D3 !important;
+}
+
+#about-me {
+    text-align: center;
+    color: black;
+    padding-left: 100px
+    padding-right: 100px
+
 }
