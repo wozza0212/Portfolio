@@ -14,7 +14,7 @@
             <p>A fully self taught developer, keen to both learn and help</p>
         </div>
 
-        <div class="project_layout">
+        <div class="projects">
             <h2>Personal Projects</h2>
             {% for project in projects %}
 
@@ -23,7 +23,7 @@
             <img src = "{{ project.image.url }}" height=300 width = 400>
             {% if project.url %}
             <br>
-            <a href="{{project.url}}"></a>
+            <a href="{{project.url}}">{{project.url}}</a>
             {% endif %}
             {% endfor %}
         </div>
