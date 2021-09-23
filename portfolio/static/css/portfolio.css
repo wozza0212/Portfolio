@@ -13,3 +13,12 @@ body{
     padding-right: 100px
 
 }
+
+.project h3{
+    color: red;
+}
+
+.project {
+    border: solid black 2px;
+    margin: 10px;
+}
