@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 {% extends "portfolio/base.html" %}
+{% load static %}
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +13,13 @@
 
         <h2 id="about-title">A Little Bit About Me</h2>
         <div class="container"></div>
+
+            <div class="picture-of-me">
+
+                <img src="{% static 'portfolio/me.jpg' %}" height="500px" width="400px">
+
+            </div>
+
             <p id="about-me">
                 Hello, my name is Tom, software development really appeals to me because I've always enjoyed problem solving,
                 I find it to be both mentally stimulating and very rewarding, this is one of the main reasons I decided to

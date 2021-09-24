@@ -1,32 +1,40 @@
 h1{
   color: red;
-}
+    }
 
 body{
     background-color: #D3D3D3 !important;
-}
+    }
 
 #about-title {
     text-align: center;
     margin: 20px;
-
-
-}
+    }
 
 #about-me {
     text-align: center;
     color: black;
     padding-left: 100px
-    padding-right: 100px
+    padding-right: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
 
-}
+.picture-of-me{
+text-align: center;
+    display: block;
+    margin: auto;
+    margin-top 20px;
+    margin-bottom: 20px;
+    }
+
 
 .project h3{
     color: red;
-}
+    }
 
 .project {
     border: solid black 2px;
     margin: 10px;
     padding: 20px;
-}
+    }
