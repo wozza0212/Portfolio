@@ -38,3 +38,12 @@ text-align: center;
     margin: 10px;
     padding: 20px;
     }
+
+.small-info {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+
+
+}
