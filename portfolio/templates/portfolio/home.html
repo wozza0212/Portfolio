@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% extends "portfolio/base.html" %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,6 +39,19 @@
                     {% endfor %}
                 </div>
         </div>
+        <div class="my-links">
+            <div class="git-hub-link">
+                <div class="github-logo">
+                    <img src="{% static 'portfolio/Github.jpg' %}" height="50" width="50">
+                    <a class="github-link" href="https://github.com/wozza0212">My Github Profile</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
     </div>
 {% endblock %}
 

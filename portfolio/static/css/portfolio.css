@@ -9,6 +9,7 @@ body{
 #about-title {
     text-align: center;
     margin: 20px;
+    margin-top: 50px;
     }
 
 #about-me {
@@ -43,7 +44,19 @@ text-align: center;
     width: 60%;
     text-align: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 80px;
+    }
 
+.nav-item a {
+    color: #6F0;
+}
 
+.github-logo {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+.github-link {
+    margin-left: 30px;
 }
