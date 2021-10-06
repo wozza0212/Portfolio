@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% extends "portfolio/base.html" %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,23 +8,63 @@
 </head>
 <body>
 {% block content %}
-    <div class="Small_info">
-        <h1>Thomas Wasnidge</h1>
-        <p>A fully self taught developer, keen to both learn and help</p>
-    </div>
 
-    <div class="project_layout">
-        <h2>Personal Projects</h2>
-        {% for project in projects %}
+    <div class="container">
+        <div class="small-info">
 
-        <h3>{{project.title}}</h3>
-        <p>{{project.description}}</p>
-        <img src = "{{ project.image.url }}" height=300 width = 400>
-        {% if project.url %}
-        <br>
-        <a href="{{project.url}}"></a>
-        {% endif %}
-        {% endfor %}
+            <h4>Blurb</h4>
+
+            <p>Hello, my name is <strong class="my-name">Thomas Wasnidge</strong> and this is my personal website.
+            I am a self taught developer, and the idea behind this website is just to show bits of what
+            i can do and to let you know a little bit more about me.  It also allows me to track my own progress
+            and share bits of what I learn.</p>
+        </div>
+
+        <div class="about-this-site">
+            <h4>About This Site</h4>
+            <p> This site is generated with django, originally i only planned on learning Python, however
+            once I realised i would need a personal website, learning django to make it seemed like the
+            obvious route to go down.  This site also incorporates HTML, CSS Bootstrap and JavaScript,
+            all of which I picked up along the route to building this site. </p>
+
+
+        </div>
+
+        <div class="projects">
+            <a name="projects"></a>
+            <h2>Personal Projects</h2>
+                <div class="container">
+                    {% for project in projects %}
+                        {% if forloop.first %}<div class="row">{% endif %}
+                            <div class="col-lg-4">
+                                <div class="project">
+                                    <h3>{{project.title}}</h3>
+                                    <p>{{project.description}}</p>
+                                    <img src = "{{ project.image.url }}" height=200 width = 300>
+                                    {% if project.url %}
+                                    <br>
+                                    <a href="{{project.url}}">{{project.url}}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+                        {% if forloop.last %}</div>{% endif %}
+                    {% endfor %}
+                </div>
+        </div>
+        <div class="my-links">
+            <div class="git-hub-link">
+                <div class="github-logo">
+                    <img src="{% static 'portfolio/Github.jpg' %}" height="50" width="50">
+                    <a class="github-link" href="https://github.com/wozza0212">My Github Profile</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
     </div>
 {% endblock %}
 

@@ -34,7 +34,7 @@ urlpatterns = [
     path('about_me.html/', views.about_me, name='about_me'),
     path('contact_me.html/', views.contact_me, name='contact_me'),
     path('skills.html/', views.skills, name='skills'),
-    path('projects.html', views.projects, name='projects')
+    path('projects.html/', views.projects, name='projects')
 
 ]
 
