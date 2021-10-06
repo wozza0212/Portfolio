@@ -1,10 +1,43 @@
-h1{
-  color: red;
+/* base */
+body{
+    background-color: #282923 !important;
     }
 
-body{
-    background-color: #D3D3D3 !important;
+p {
+    color: #C0C0C0;
+}
+
+a {
+    color: #6F0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #F5F5F5;
+}
+
+/* home page*/
+
+.small-info {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
     }
+
+.my-name {
+    color: yellow;
+    font-size: 20px;
+
+}
+
+.about-this-site {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
 
 #about-title {
     text-align: center;
@@ -14,12 +47,12 @@ body{
 
 #about-me {
     text-align: center;
-    color: black;
     padding-left: 100px
     padding-right: 100px;
     margin-left: 100px;
     margin-right: 100px;
     }
+
 
 .picture-of-me{
 text-align: center;
@@ -40,12 +73,6 @@ text-align: center;
     padding: 20px;
     }
 
-.small-info {
-    width: 60%;
-    text-align: center;
-    margin: auto;
-    margin-top: 80px;
-    }
 
 .nav-item a {
     color: #6F0;
