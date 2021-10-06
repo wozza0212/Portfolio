@@ -6,3 +6,4 @@ class Project(models.Model):
     description = models.CharField(max_length=300)
     image = models.ImageField(upload_to='portfolio/images/')
     url = models.URLField(blank=True)
+    file = models.FileField(upload_to='portfolio/File_uploads', blank=True)
