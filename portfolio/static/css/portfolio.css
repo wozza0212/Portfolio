@@ -1,19 +1,31 @@
 /* base */
+
+@font-face {
+    font-family: 'Hack-Regular';
+    font-style: normal;
+    src: local('Hack-regular'), url('portfolio/static/fonts/hack/Hack-Regular.ttf') format('truetype');
+}
+
 body{
+    font-family: 'Hack-Regular';
     background-color: #282923 !important;
     }
 
 p {
+    font-family: 'Hack-Regular';
     color: #C0C0C0;
 }
 
 a {
+    font-family: 'Hack-Regular';
     color: #6F0;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hack-Regular';
     color: #F5F5F5;
 }
+
 
 /* home page*/
 
@@ -37,32 +49,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 40px;
 }
 
-
-
-#about-title {
+.my-logo {
     text-align: center;
-    margin: 20px;
-    margin-top: 50px;
-    }
-
-#about-me {
-    text-align: center;
-    padding-left: 100px
-    padding-right: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    }
-
-
-.picture-of-me{
-text-align: center;
-    display: block;
-    margin: auto;
-    margin-top 20px;
-    margin-bottom: 20px;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
 
 
 .project h3{
@@ -87,5 +79,44 @@ text-align: center;
 }
 
 .github-link {
-    margin-left: 30px;
+    margin-left: 20px;
 }
+
+.linked-in-link {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+.code-academy-link {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+
+/* about me*/
+#about-title {
+    text-align: center;
+    margin: 20px;
+    margin-top: 50px;
+    }
+
+#about-me {
+    text-align: center;
+    padding-left: 100px
+    padding-right: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    }
+
+
+.picture-of-me{
+text-align: center;
+    display: block;
+    margin: auto;
+    margin-top 20px;
+    margin-bottom: 20px;
+    }
