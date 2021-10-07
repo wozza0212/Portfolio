@@ -1,20 +1,28 @@
 /* base */
 
-
+@font-face {
+    font-family: 'Hack-Regular';
+    font-style: normal;
+    src: local('Hack-regular'), url('portfolio/static/fonts/hack/Hack-Regular.ttf') format('truetype');
+}
 
 body{
+    font-family: 'Hack-Regular';
     background-color: #282923 !important;
     }
 
 p {
+    font-family: 'Hack-Regular';
     color: #C0C0C0;
 }
 
 a {
+    font-family: 'Hack-Regular';
     color: #6F0;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hack-Regular';
     color: #F5F5F5;
 }
 
@@ -48,6 +56,46 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 80px;
 }
 
+
+.project h3{
+    color: red;
+    }
+
+.project {
+    border: solid black 2px;
+    margin: 10px;
+    padding: 20px;
+    }
+
+
+.nav-item a {
+    color: #6F0;
+}
+
+.github-logo {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+.github-link {
+    margin-left: 20px;
+}
+
+.linked-in-link {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+.code-academy-link {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+
+/* about me*/
 #about-title {
     text-align: center;
     margin: 20px;
@@ -72,29 +120,3 @@ text-align: center;
     margin-top 20px;
     margin-bottom: 20px;
     }
-
-
-.project h3{
-    color: red;
-    }
-
-.project {
-    border: solid black 2px;
-    margin: 10px;
-    padding: 20px;
-    }
-
-
-.nav-item a {
-    color: #6F0;
-}
-
-.github-logo {
-    display: block;
-    margin-top: 100px;
-    margin-bottom: 100px
-}
-
-.github-link {
-    margin-left: 30px;
-}

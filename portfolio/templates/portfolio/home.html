@@ -52,24 +52,36 @@
                     {% endfor %}
                 </div>
         </div>
-        <div class="my-links">
-            <div class="git-hub-link">
-                <div class="github-logo">
-                    <img src="{% static 'portfolio/Github.jpg' %}" height="50" width="50">
-                    <a class="github-link" href="https://github.com/wozza0212">My Github Profile</a>
+            <div class="container">
+                <div class="my-links">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="git-hub-link">
+                                <div class="github-logo">
+                                    <img src="{% static 'portfolio/Github.jpg' %}" height="50" width="50">
+                                    <a class="github-link" href="https://github.com/wozza0212">My Github Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="linked-in-link">
+                                <div class="linked-in-logo">
+                                    <img src="{% static 'portfolio/linkedin.jpg' %}" height="50" width="50">
+                                    <a class="linked-in" href="https://uk.linkedin.com/">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="code-academy-link">
+                                <div class="code-academy-logo">
+                                    <img src="{% static 'portfolio/codeac1.jpg' %}" height="50" width="50">
+                                    <a class="linked-in" href="https://www.codecademy.com/profiles/thomasWasnidge3411926869?next=true">CodeAcademy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="linked-in-link">
-                <div class="linked-in-logo">
-                    <img src="{% static 'portfolio/linkedin.jpg' %}" height="50" width="50">
-                    <a class="linked-in" href="https://uk.linkedin.com/">LinkedIn</a>
-                </div>
-            </div>
-
-
-
-        </div>
-
 
     </div>
 {% endblock %}
