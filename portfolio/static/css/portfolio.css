@@ -23,7 +23,9 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Hack-Regular';
-    color: #F5F5F5;
+    color: #BEBEBE;
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 
@@ -58,15 +60,25 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .project h3{
-    color: red;
+    color: yellow;
     }
 
 .project {
-    border: solid black 2px;
+    background: #696969;
+    border: outset white 2px;
     margin: 10px;
     padding: 20px;
     }
 
+.project a {
+    word-wrap: break-word;
+    color: #6F0;
+    margin: auto;
+}
+
+.project p{
+    color: black;
+}
 
 .nav-item a {
     color: #6F0;
