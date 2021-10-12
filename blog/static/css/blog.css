@@ -1,23 +1,83 @@
-body { 
-    margin:0;
+/* Font */
+
+@font-face {
+    font-family: 'Hack-Regular';
+    font-style: normal;
+    src: local('Hack-regular'), url('portfolio/static/fonts/hack/Hack-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Hack-Regular';
+    background-color: #282923 !important;
+    margin:10px;
     padding:0;
-    font-family:helvetica, sans-serif; 
 }
 
-a { 
-    color:#00abff;
-    text-decoration:none; 
+.next-page {
+    font-family: 'Hack-Regular';
+    color: #6F0;
+
 }
 
-h1 { 
+.current {
+    font-family: 'Hack-Regular';
+    color: yellow;
+}
+.post-title {
+    font-family: 'Hack-Regular';
+    color: #6F0;
+}
+
+.tag-list {
+    font-family: 'Hack-Regular';
+    color: yellow;
+}
+
+p {
+    font-family: 'Hack-Regular';
+    color: #C0C0C0;
+}
+
+a {
+    font-family: 'Hack-Regular';
+    color: #6F0;
+}
+
+h1 {
+    font-family: 'Hack-Regular';
     font-weight:normal;
     border-bottom:1px solid #bbb;
     padding:0 0 10px 0;
+    color: #BEBEBE;
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 h2 {
+    font-family: 'Hack-Regular';
     font-weight:normal;
     margin:30px 0 0;
+    color: yellow;
+}
+
+h3 h4 h5 h6 {
+    font-family: 'Hack-Regular';
+    color: #BEBEBE;
+}
+
+.nav-item a {
+    color: #6F0;
+}
+
+/* List Page*/
+.list-page {
+    margin: 40px;
+
+}
+
+/*Detail Page*/
+.detail-page{
+    margin: 40px;
 }
 
 #content { 
@@ -26,17 +86,28 @@ h2 {
     padding:0 0 0 30px; 
 }
 
-#sidebar { 
+#sidebar {
+    margin-top: 30px;
     float:right;
     width:30%;
     padding:10px;
-    background:#efefef; 
+    background: #696969;
     height:100%;
+}
+
+.sidebar-links {
+    font-family: 'Hack-Regular';
+    color: #6F0;
+}
+
+.latest-post-link {
+    font-family: 'Hack-Regular';
+    color: #6F0;
 }
 
 p.date { 
     color:#ccc;
-    font-family: georgia, serif;
+    font-family: 'Hack-Regular';
     font-size: 12px;
     font-style: italic; 
 }
@@ -48,10 +119,10 @@ p.date {
 }
 
 /* forms */
-label { 
+label {
+    color: #C0C0C0;
     float:left;
     clear:both;
-    color:#333;
     margin-bottom:4px; 
 }
 input, textarea { 
